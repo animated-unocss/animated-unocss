@@ -53,7 +53,15 @@ export default defineConfig({
     ],
     sidebar: {
       '/':[
-
+        {
+          text:'Demo',
+          items:[
+            {
+              text:'Demo',
+              link:'/demo/'
+            }
+          ]
+        }
       ]
     }
   },

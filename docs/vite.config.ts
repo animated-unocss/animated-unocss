@@ -18,7 +18,7 @@ export default defineConfig({
       ],
       presets: [
         presetUno({
-          dark: 'media',
+          dark: 'class',
         }),
         animatedUno(),
         presetAttributify(),
