@@ -14,7 +14,8 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "example:vue3": "pnpm -C example/vue3 run dev"
+    "example:vue3": "pnpm -C example/vue3 run dev",
+    "docs:dev":"pnpm -C docs run dev"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",

@@ -1,0 +1,32 @@
+{
+  "name": "@animated-unocss/docs",
+  "version": "0.0.0",
+  "private": "true",
+  "description": "A configuration to use Animate.css with UnoCSS.",
+  "license": "MIT",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "scripts": {
+    "dev": "vitepress --port 3344 --open --host",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "dependencies": {
+    "vue": "^3.2.40"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.8",
+    "@unocss/reset": "^0.45.26",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vueuse/core": "^9.3.0",
+    "esno": "^0.16.3",
+    "fast-glob": "^3.2.12",
+    "https-localhost": "^4.7.1",
+    "jiti": "^1.16.0",
+    "pnpm": "^7.13.2",
+    "typescript": "^4.8.4",
+    "unocss": "^0.45.26",
+    "unplugin-vue-components": "^0.22.8",
+    "vitepress": "1.0.0-alpha.19",
+    "workbox-window": "^6.5.4"
+  }
+}
