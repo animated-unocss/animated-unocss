@@ -11,11 +11,14 @@ hero:
   tagline: Community Presets.
   image:
     src: /logo.svg
-    alt: pistachio
+    alt: animated-unocss
   actions:
     - theme: brand
       text: Get Started
       link: /guide/
+    - theme: alt
+      text: demo
+      link: /demo/
     - theme: alt
       text: View on GitHub
       link: https://github.com/elonehoo/pistachio
@@ -28,6 +31,3 @@ onMounted(()=>{
 document.getElementsByClassName('VPImage')[0].classList.add('animate-rubber-band','animate-count-infinite','animate-duration-1s')
 })
 </script>
-
-
-<Animated/>
