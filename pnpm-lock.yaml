@@ -25,16 +25,16 @@ importers:
   core:
     specifiers:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
-      '@unocss/autocomplete': ^0.45.26
-      '@unocss/preset-mini': ^0.45.26
-      animate.css: ^4.1.1
-      unocss: ^0.45.26
+      '@unocss/autocomplete': 0.45.26
+      '@unocss/preset-mini': 0.45.26
+      animate.css: 4.1.1
+      unocss: 0.45.26
     devDependencies:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
       '@unocss/autocomplete': 0.45.26
       '@unocss/preset-mini': 0.45.26
       animate.css: 4.1.1
-      unocss: 0.45.26
+      unocss: 0.45.26_vite@3.1.6
 
   test:
     specifiers:
@@ -629,16 +629,6 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@unocss/astro/0.45.26:
-    resolution: {integrity: sha512-jAdbYNwjyzh05B4B7lhuHYmkNfmIZsQGhRNXogOx0t1BMzRZg9jID5xsJiujaElQL6ll53pbuRRyGV80o75n0Q==}
-    dependencies:
-      '@unocss/core': 0.45.26
-      '@unocss/reset': 0.45.26
-      '@unocss/vite': 0.45.26
-    transitivePeerDependencies:
-      - vite
-    dev: true
-
   /@unocss/astro/0.45.26_vite@3.1.6:
     resolution: {integrity: sha512-jAdbYNwjyzh05B4B7lhuHYmkNfmIZsQGhRNXogOx0t1BMzRZg9jID5xsJiujaElQL6ll53pbuRRyGV80o75n0Q==}
     dependencies:
@@ -781,21 +771,6 @@ packages:
     resolution: {integrity: sha512-MUManbGNe1q5/dm4QLW1SbegeH/06ZbYyREfJEy7U5Ze5Npe67a1eZ4EA4b6el5Y8Bd+wpJ4xj1D+fxC6NVWJQ==}
     dependencies:
       '@unocss/core': 0.45.26
-    dev: true
-
-  /@unocss/vite/0.45.26:
-    resolution: {integrity: sha512-9BNJXBN0UG+olMbfIcVcrJgBetyO3HOP6Wx3r5Oc8iwfYSxrWQlHFF+yVJi/+oxsENfsjAgCRH7O+nF4FrXceA==}
-    peerDependencies:
-      vite: ^2.9.0 || ^3.0.0-0
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@rollup/pluginutils': 4.2.1
-      '@unocss/config': 0.45.26
-      '@unocss/core': 0.45.26
-      '@unocss/inspector': 0.45.26
-      '@unocss/scope': 0.45.26
-      '@unocss/transformer-directives': 0.45.26
-      magic-string: 0.26.6
     dev: true
 
   /@unocss/vite/0.45.26_vite@3.1.6:
@@ -3424,37 +3399,6 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-    dev: true
-
-  /unocss/0.45.26:
-    resolution: {integrity: sha512-d8mDD6YewHfSCA2uGbBzKY/UnQRSrIDgP7gI61Ll6XY+DcLCVMn0vc1BubQGEL2K0wP9wDsI8HDR6VzDI/0w9w==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@unocss/webpack': 0.45.26
-    peerDependenciesMeta:
-      '@unocss/webpack':
-        optional: true
-    dependencies:
-      '@unocss/astro': 0.45.26
-      '@unocss/cli': 0.45.26
-      '@unocss/core': 0.45.26
-      '@unocss/preset-attributify': 0.45.26
-      '@unocss/preset-icons': 0.45.26
-      '@unocss/preset-mini': 0.45.26
-      '@unocss/preset-tagify': 0.45.26
-      '@unocss/preset-typography': 0.45.26
-      '@unocss/preset-uno': 0.45.26
-      '@unocss/preset-web-fonts': 0.45.26
-      '@unocss/preset-wind': 0.45.26
-      '@unocss/reset': 0.45.26
-      '@unocss/transformer-attributify-jsx': 0.45.26
-      '@unocss/transformer-compile-class': 0.45.26
-      '@unocss/transformer-directives': 0.45.26
-      '@unocss/transformer-variant-group': 0.45.26
-      '@unocss/vite': 0.45.26
-    transitivePeerDependencies:
-      - supports-color
-      - vite
     dev: true
 
   /unocss/0.45.26_vite@3.1.6:
