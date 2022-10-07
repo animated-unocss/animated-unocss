@@ -5,7 +5,7 @@ import postcss from 'postcss';
 import postcssJs from 'postcss-js'
 import { durationShortcuts } from '../../core/src/animated'
 import animated from './animated.json'
-import { presetExtra } from 'animated-unocss'
+import { animatedUno } from 'animated-unocss'
 import { removeLastZero, removeUnusedCSS } from './util'
 
 describe('animated.json', () => {
@@ -36,7 +36,7 @@ describe('animated', () => {
     presets: [
       presetUno(),
       presetAttributify(),
-      presetExtra(),
+      animatedUno(),
     ],
   });
 
@@ -200,7 +200,7 @@ describe('animated', () => {
       presets: [
         presetUno(),
         presetAttributify(),
-        presetExtra(),
+        animatedUno(),
       ],
     }));
 
