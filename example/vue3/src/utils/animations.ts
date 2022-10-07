@@ -5,7 +5,7 @@ class Item {
   constructor(label: string,value: string) {
     this.label = label;
     this.value = value;
-}
+  }
 }
 
 const Animations: Record<string, Array<Item>> = {
@@ -64,58 +64,96 @@ const Animations: Record<string, Array<Item>> = {
     {label:'fadeInRight',value:'fade-in-right'},
     {label:'fadeInRightBig',value:'fade-in-right-big'},
     {label:'fadeInUp',value:'fade-in-up'},
-    'fadeInUpBig',
-    'fadeInTopLeft',
-    'fadeInTopRight',
-    'fadeInBottomLeft',
-    'fadeInBottomRight',
+    {label:'fadeInUpBig',value:'fade-in-up-big'},
+    {label:'fadeInTopLeft',value:'fade-in-top-left'},
+    {label:'fadeInTopRight',value:'fade-in-top-right'},
+    {label:'fadeInBottomLeft',value:'fade-in-bottom-left'},
+    {label:'fadeInBottomRight',value:'fade-in-bottom-right'},
   ],
 
-  // 'Fade Exits': [
-  //   'fadeOut',
-  //   'fadeOutDown',
-  //   'fadeOutDownBig',
-  //   'fadeOutLeft',
-  //   'fadeOutLeftBig',
-  //   'fadeOutRight',
-  //   'fadeOutRightBig',
-  //   'fadeOutUp',
-  //   'fadeOutUpBig',
-  //   'fadeOutTopLeft',
-  //   'fadeOutTopRight',
-  //   'fadeOutBottomRight',
-  //   'fadeOutBottomLeft',
-  // ],
+  'Fade Exits': [
+    {label:'fadeOut',value:'fade-out'},
+    {label:'fadeOutDown',value:'fade-out-down'},
+    {label:'fadeOutDownBig',value:'fade-out-down-big'},
+    {label:'fadeOutLeft',value:'fade-out-left'},
+    {label:'fadeOutLeftBig',value:'fade-out-left-big'},
+    {label:'fadeOutRight',value:'fade-out-right'},
+    {label:'fadeOutRightBig',value:'fade-out-right-big'},
+    {label:'fadeOutUp',value:'fade-out-up'},
+    {label:'fadeOutUpBig',value:'fade-out-up-big'},
+    {label:'fadeOutTopLeft',value:'fade-out-top-left'},
+    {label:'fadeOutTopRight',value:'fade-out-top-right'},
+    {label:'fadeOutBottomRight',value:'fade-out-bottom-right'},
+    {label:'fadeOutBottomLeft',value:'fade-out-bottom-left'},
+  ],
 
-  // 'Flippers': ['flip', 'flipInX', 'flipInY', 'flipOutX', 'flipOutY'],
+  'Flippers': [
+    {label:'flip',value:'flip'},
+    {label:'flipInX',value:'flip-in-x'},
+    {label:'flipInY',value:'flip-in-y'},
+    {label:'flipOutX',value:'flip-out-x'},
+    {label:'flipOutY',value:'flip-out-y'}
+  ],
 
-  // 'LightSpeed': ['lightSpeedInRight', 'lightSpeedInLeft', 'lightSpeedOutRight', 'lightSpeedOutLeft'],
+  'LightSpeed': [
+    {label:'lightSpeedInRight',value:'light-speed-in-right'},
+    {label:'lightSpeedInLeft',value:'light-speed-in-left'},
+    {label:'lightSpeedOutRight',value:'light-speed-out-right'},
+    {label:'lightSpeedOutLeft',value:'light-speed-out-left'}
+  ],
 
-  // 'Rotating Entrances': [
-  //   'rotateIn',
-  //   'rotateInDownLeft',
-  //   'rotateInDownRight',
-  //   'rotateInUpLeft',
-  //   'rotateInUpRight',
-  // ],
+  'Rotating Entrances': [
+    {label:'rotateIn',value:'rotate-in'},
+    {label:'rotateInDownLeft',value:'rotate-in-down-left'},
+    {label:'rotateInDownRight',value:'rotate-in-down-right'},
+    {label:'rotateInUpLeft',value:'rotate-in-up-left'},
+    {label:'rotateInUpRight',value:'rotate-in-up-right'},
+  ],
 
-  // 'Rotating Exits': [
-  //   'rotateOut',
-  //   'rotateOutDownLeft',
-  //   'rotateOutDownRight',
-  //   'rotateOutUpLeft',
-  //   'rotateOutUpRight',
-  // ],
+  'Rotating Exits': [
+    {label:'rotateOut',value:'rotate-out'},
+    {label:'rotateOutDownLeft',value:'rotate-out-down-left'},
+    {label:'rotateOutDownRight',value:'rotate-out-down-right'},
+    {label:'rotateOutUpLeft',value:'rotate-out-up-left'},
+    {label:'rotateOutUpRight',value:'rotate-out-up-right'},
+  ],
 
-  // 'Specials': ['hinge', 'jackInTheBox', 'rollIn', 'rollOut'],
+  'Specials': [
+    {label:'hinge',value:'hinge'},
+    {label:'jackInTheBox',value:'jack-in-the-box'},
+    {label:'rollIn',value:'roll-in'},
+    {label:'rollOut',value:'roll-out'}
+  ],
 
-  // 'Zooming Entrances': ['zoomIn', 'zoomInDown', 'zoomInLeft', 'zoomInRight', 'zoomInUp'],
+  'Zooming Entrances': [
+    {label:'zoomIn',value:'zoom-in'},
+    {label:'zoomInDown',value:'zoom-in-down'},
+    {label:'zoomInLeft',value:'zoom-in-left'},
+    {label:'zoomInRight',value:'zoom-in-right'},
+    {label:'zoomInUp',value:'zoom-in-up'}
+  ],
 
-  // 'Zooming Exits': ['zoomOut', 'zoomOutDown', 'zoomOutLeft', 'zoomOutRight', 'zoomOutUp'],
+  'Zooming Exits': [
+    {label:'zoomOut',value:'zoom-out'},
+    {label:'zoomOutDown',value:'zoom-out-down'},
+    {label:'zoomOutLeft',value:'zoom-out-left'},
+    {label:'zoomOutRight',value:'zoom-out-right'},
+    {label:'zoomOutUp',value:'zoom-out-up'}
+  ],
 
-  // 'Sliding Entrances': ['slideInDown', 'slideInLeft', 'slideInRight', 'slideInUp'],
+  'Sliding Entrances': [
+    {label:'slideInDown',value:'slide-in-down'},
+    {label:'slideInLeft',value:'slide-in-left'},
+    {label:'slideInRight',value:'slide-in-right'},
+    {label:'slideInUp',value:'slide-in-up'}
+  ],
 
-  // 'Sliding Exits': ['slideOutDown', 'slideOutLeft', 'slideOutRight', 'slideOutUp'],
+  'Sliding Exits': [
+    {label:'slideOutDown',value:'slide-out-down'},
+    {label:'slideOutLeft',value:'slide-out-left'},
+    {label:'slideOutRight',value:'slide-out-right'},
+    {label:'slideOutUp',value:'slide-out-up'}
+  ],
 }
 
 export default Animations
