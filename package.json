@@ -10,7 +10,7 @@
     "prepare": "pnpm -r run stub",
     "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
-    "test": "vitest",
+    "test": "pnpm -C test run test",
     "coverage": "vitest run --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

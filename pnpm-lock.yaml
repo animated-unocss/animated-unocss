@@ -6,7 +6,6 @@ importers:
     specifiers:
       '@elonehoo/eslint-config': 2.0.0
       '@elonehoo/rimraf': 0.0.1
-      '@titem/core': workspace:*
       '@types/node': 18.8.3
       bumpp: 8.2.1
       eslint: 8.24.0
@@ -16,7 +15,6 @@ importers:
     devDependencies:
       '@elonehoo/eslint-config': 2.0.0_ypn2ylkkyfa5i233caldtndbqa
       '@elonehoo/rimraf': 0.0.1
-      '@titem/core': link:core
       '@types/node': 18.8.3
       bumpp: 8.2.1
       eslint: 8.24.0
@@ -36,14 +34,26 @@ importers:
       '@unocss/autocomplete': 0.45.26
       '@unocss/preset-mini': 0.45.26
       animate.css: 4.1.1
-      unocss: 0.45.26_vite@3.1.6
+      unocss: 0.45.26
 
   test:
     specifiers:
-      '@titem/core': workspace:*
+      '@types/lodash-es': ^4.17.6
+      '@unocss/autocomplete': ^0.45.26
+      animated-unocss: workspace:*
+      lodash-es: ^4.17.21
+      postcss: ^8.4.17
+      postcss-js: ^4.0.0
+      unocss: ^0.45.26
       vitest: 0.23.4
     devDependencies:
-      '@titem/core': link:../core
+      '@types/lodash-es': 4.17.6
+      '@unocss/autocomplete': 0.45.26
+      animated-unocss: link:../core
+      lodash-es: 4.17.21
+      postcss: 8.4.17
+      postcss-js: 4.0.0_postcss@8.4.17
+      unocss: 0.45.26_vite@3.1.6
       vitest: 0.23.4
 
 packages:
@@ -461,6 +471,16 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
+    dependencies:
+      '@types/lodash': 4.14.186
+    dev: true
+
+  /@types/lodash/4.14.186:
+    resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
+    dev: true
+
   /@types/mdast/3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
@@ -609,6 +629,16 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
+  /@unocss/astro/0.45.26:
+    resolution: {integrity: sha512-jAdbYNwjyzh05B4B7lhuHYmkNfmIZsQGhRNXogOx0t1BMzRZg9jID5xsJiujaElQL6ll53pbuRRyGV80o75n0Q==}
+    dependencies:
+      '@unocss/core': 0.45.26
+      '@unocss/reset': 0.45.26
+      '@unocss/vite': 0.45.26
+    transitivePeerDependencies:
+      - vite
+    dev: true
+
   /@unocss/astro/0.45.26_vite@3.1.6:
     resolution: {integrity: sha512-jAdbYNwjyzh05B4B7lhuHYmkNfmIZsQGhRNXogOx0t1BMzRZg9jID5xsJiujaElQL6ll53pbuRRyGV80o75n0Q==}
     dependencies:
@@ -751,6 +781,21 @@ packages:
     resolution: {integrity: sha512-MUManbGNe1q5/dm4QLW1SbegeH/06ZbYyREfJEy7U5Ze5Npe67a1eZ4EA4b6el5Y8Bd+wpJ4xj1D+fxC6NVWJQ==}
     dependencies:
       '@unocss/core': 0.45.26
+    dev: true
+
+  /@unocss/vite/0.45.26:
+    resolution: {integrity: sha512-9BNJXBN0UG+olMbfIcVcrJgBetyO3HOP6Wx3r5Oc8iwfYSxrWQlHFF+yVJi/+oxsENfsjAgCRH7O+nF4FrXceA==}
+    peerDependencies:
+      vite: ^2.9.0 || ^3.0.0-0
+    dependencies:
+      '@ampproject/remapping': 2.2.0
+      '@rollup/pluginutils': 4.2.1
+      '@unocss/config': 0.45.26
+      '@unocss/core': 0.45.26
+      '@unocss/inspector': 0.45.26
+      '@unocss/scope': 0.45.26
+      '@unocss/transformer-directives': 0.45.26
+      magic-string: 0.26.6
     dev: true
 
   /@unocss/vite/0.45.26_vite@3.1.6:
@@ -956,6 +1001,11 @@ packages:
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+    dev: true
+
+  /camelcase-css/2.0.1:
+    resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
+    engines: {node: '>= 6'}
     dev: true
 
   /chai/4.3.6:
@@ -2462,6 +2512,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: true
+
   /lodash.get/4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
     dev: true
@@ -2858,6 +2912,16 @@ packages:
     resolution: {integrity: sha512-lOQRBcCWycLK1PB9KptqTd6iyiH7m4GRuS4G2j4b74yDx/XvRXtP/weYz8e0/ia7HX1pMF1vJCF48ssklq0TJQ==}
     engines: {node: '>=14.6'}
     hasBin: true
+    dev: true
+
+  /postcss-js/4.0.0_postcss@8.4.17:
+    resolution: {integrity: sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==}
+    engines: {node: ^12 || ^14 || >= 16}
+    peerDependencies:
+      postcss: ^8.3.3
+    dependencies:
+      camelcase-css: 2.0.1
+      postcss: 8.4.17
     dev: true
 
   /postcss-selector-parser/6.0.10:
@@ -3360,6 +3424,37 @@ packages:
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
+    dev: true
+
+  /unocss/0.45.26:
+    resolution: {integrity: sha512-d8mDD6YewHfSCA2uGbBzKY/UnQRSrIDgP7gI61Ll6XY+DcLCVMn0vc1BubQGEL2K0wP9wDsI8HDR6VzDI/0w9w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@unocss/webpack': 0.45.26
+    peerDependenciesMeta:
+      '@unocss/webpack':
+        optional: true
+    dependencies:
+      '@unocss/astro': 0.45.26
+      '@unocss/cli': 0.45.26
+      '@unocss/core': 0.45.26
+      '@unocss/preset-attributify': 0.45.26
+      '@unocss/preset-icons': 0.45.26
+      '@unocss/preset-mini': 0.45.26
+      '@unocss/preset-tagify': 0.45.26
+      '@unocss/preset-typography': 0.45.26
+      '@unocss/preset-uno': 0.45.26
+      '@unocss/preset-web-fonts': 0.45.26
+      '@unocss/preset-wind': 0.45.26
+      '@unocss/reset': 0.45.26
+      '@unocss/transformer-attributify-jsx': 0.45.26
+      '@unocss/transformer-compile-class': 0.45.26
+      '@unocss/transformer-directives': 0.45.26
+      '@unocss/transformer-variant-group': 0.45.26
+      '@unocss/vite': 0.45.26
+    transitivePeerDependencies:
+      - supports-color
+      - vite
     dev: true
 
   /unocss/0.45.26_vite@3.1.6:

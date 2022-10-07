@@ -10,7 +10,13 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@titem/core": "workspace:*",
+    "@types/lodash-es": "^4.17.6",
+    "@unocss/autocomplete": "^0.45.26",
+    "animated-unocss": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.17",
+    "postcss-js": "^4.0.0",
+    "unocss": "^0.45.26",
     "vitest": "0.23.4"
   }
 }
