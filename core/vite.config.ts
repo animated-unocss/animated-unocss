@@ -20,7 +20,7 @@ export default defineConfig({
     outDir: 'dist',
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'vue-hooks',
+      name: 'animated-unocss',
       fileName: 'index',
     },
     rollupOptions: {

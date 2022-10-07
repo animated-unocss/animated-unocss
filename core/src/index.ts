@@ -1,2 +1,11 @@
-export const one = 1
-export const two = 2
+import { type Preset } from 'unocss';
+import { animatedRules } from './animated';
+
+export function presetExtra(): Preset {
+  return {
+    name: 'animated-unocss',
+    rules: [
+      ...animatedRules,
+    ],
+  };
+}
