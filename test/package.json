@@ -1,0 +1,16 @@
+{
+  "name": "@animated-unocss/test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A configuration to use Animate.css with UnoCSS.",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@titem/core": "workspace:*",
+    "vitest": "0.23.4"
+  }
+}

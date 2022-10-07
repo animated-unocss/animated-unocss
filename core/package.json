@@ -1,0 +1,15 @@
+{
+  "name": "animated-unocss",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A configuration to use Animate.css with UnoCSS.",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && vite build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@elonehoo/vite-plugin-type-ts": "0.0.1"
+  }
+}
