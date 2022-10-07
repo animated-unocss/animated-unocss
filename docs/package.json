@@ -11,7 +11,8 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
-    "vue": "^3.2.40"
+    "vue": "^3.2.40",
+    "animated-unocss": "workspace:*"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.8",

@@ -3,7 +3,7 @@ import type { Plugin } from 'vite'
 import Unocss from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import { presetAttributify, presetIcons, presetUno } from 'unocss'
-
+import { animatedUno } from 'animated-unocss'
 
 export default defineConfig({
   plugins: [
@@ -20,6 +20,7 @@ export default defineConfig({
         presetUno({
           dark: 'media',
         }),
+        animatedUno(),
         presetAttributify(),
         presetIcons({
           scale: 1.2,

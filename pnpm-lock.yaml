@@ -34,7 +34,7 @@ importers:
       '@unocss/autocomplete': 0.45.26
       '@unocss/preset-mini': 0.45.26
       animate.css: 4.1.1
-      unocss: 0.45.26_vite@3.1.6
+      unocss: 0.45.26
 
   docs:
     specifiers:
@@ -42,6 +42,7 @@ importers:
       '@unocss/reset': ^0.45.26
       '@vitejs/plugin-vue': ^3.1.2
       '@vueuse/core': ^9.3.0
+      animated-unocss: workspace:*
       esno: ^0.16.3
       fast-glob: ^3.2.12
       https-localhost: ^4.7.1
@@ -50,11 +51,11 @@ importers:
       typescript: ^4.8.4
       unocss: ^0.45.26
       unplugin-vue-components: ^0.22.8
-      vite: ^3.1.6
       vitepress: 1.0.0-alpha.19
       vue: ^3.2.40
       workbox-window: ^6.5.4
     dependencies:
+      animated-unocss: link:../core
       vue: 3.2.40
     devDependencies:
       '@iconify-json/carbon': 1.1.8
@@ -69,7 +70,6 @@ importers:
       typescript: 4.8.4
       unocss: 0.45.26_vite@3.1.6
       unplugin-vue-components: 0.22.8_vue@3.2.40
-      vite: 3.1.6
       vitepress: 1.0.0-alpha.19_tbpndr44ulefs3hehwpi2mkf2y
       workbox-window: 6.5.4
 
