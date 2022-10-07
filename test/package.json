@@ -1,11 +1,11 @@
 {
   "name": "@animated-unocss/test",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "description": "A configuration to use Animate.css with UnoCSS.",
-  "author": "Elone Hoo <huchengyea@163.com>",
   "license": "MIT",
+  "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
     "test": "vitest"
   },

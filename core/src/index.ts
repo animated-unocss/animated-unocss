@@ -1,5 +1,5 @@
-import { type Preset } from 'unocss';
-import { animatedRules } from './animated';
+import { type Preset } from 'unocss'
+import { animatedRules } from './animated'
 
 export function animatedUno(): Preset {
   return {
@@ -7,5 +7,5 @@ export function animatedUno(): Preset {
     rules: [
       ...animatedRules,
     ],
-  };
+  }
 }

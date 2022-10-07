@@ -1,35 +1,35 @@
-import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss';
-import { describe, expect, test } from 'vitest';
-import { createAutocomplete } from '@unocss/autocomplete';
-import postcss from 'postcss';
+import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss'
+import { describe, expect, test } from 'vitest'
+import { createAutocomplete } from '@unocss/autocomplete'
+import postcss from 'postcss'
 import postcssJs from 'postcss-js'
+import { animatedUno } from 'animated-unocss'
 import { durationShortcuts } from '../../core/src/animated'
 import animated from './animated.json'
-import { animatedUno } from 'animated-unocss'
 import { removeLastZero, removeUnusedCSS } from './util'
 
 describe('animated.json', () => {
   test('数据的 key 均为 kebabCase 格式', () => {
     Object.keys(animated).forEach((key) => {
-      expect(/^[a-z-]+$/.test(key)).is.true;
-    });
-  });
+      expect(/^[a-z-]+$/.test(key)).is.true
+    })
+  })
 
   test('动画名称为 une 开头的 camelCase 格式', () => {
     Object.values(animated).forEach(({ animationName, css }) => {
-      expect(/^une[A-Z]/.test(animationName)).is.true;
-      expect(/^une[A-Z]/.test(css['animation-name'])).is.true;
-    });
-  });
+      expect(/^une[A-Z]/.test(animationName)).is.true
+      expect(/^une[A-Z]/.test(css['animation-name'])).is.true
+    })
+  })
 
   test('样式名为 kebabCase 格式', () => {
     Object.values(animated).forEach(({ css }) => {
       Object.keys(css).forEach((key) => {
-        expect(/^[a-z-]+$/.test(key)).is.true;
-      });
-    });
-  });
-});
+        expect(/^[a-z-]+$/.test(key)).is.true
+      })
+    })
+  })
+})
 
 describe('animated', () => {
   const generator = createGenerator({
@@ -38,10 +38,10 @@ describe('animated', () => {
       presetAttributify(),
       animatedUno(),
     ],
-  });
+  })
 
   test('animated', async () => {
-    const { css } = await generator.generate('animated');
+    const { css } = await generator.generate('animated')
 
     expect(
       removeUnusedCSS({
@@ -53,24 +53,24 @@ describe('animated', () => {
         'animationDuration': 'var(--une-animated-duration)',
         'animationFillMode': 'both',
       },
-    });
-  });
+    })
+  })
 
   test('animated-name', async () => {
     const { css } = await generator.generate(
       Object.keys(animated).map(k => `animated-${k}`).join(' '),
-    );
+    )
 
     const styles = removeUnusedCSS({
       ...postcssJs.objectify(postcss.parse(css)),
-    }) as CSSObject;
+    }) as CSSObject
 
     // 均生成了 css 样式及 @keyframes
     Object.entries(animated).forEach(([key, { animationName }]) => {
-      expect(styles[`.animated-${key}`]).toBeDefined();
-      expect(styles[`@keyframes ${animationName}`]).toBeDefined();
-    });
-  });
+      expect(styles[`.animated-${key}`]).toBeDefined()
+      expect(styles[`@keyframes ${animationName}`]).toBeDefined()
+    })
+  })
 
   test('animated-repeat', async () => {
     const { css } = await generator.generate(`
@@ -80,7 +80,7 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
       ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
-    `);
+    `)
 
     expect(
       removeUnusedCSS({
@@ -101,8 +101,8 @@ describe('animated', () => {
           [`.animated-repeat-${i}\\.${removeLastZero(i + 1)}`]: { animationIterationCount: `${i}.${removeLastZero(i + 1)}` },
         })),
       ),
-    );
-  });
+    )
+  })
 
   test('animated-delay', async () => {
     const { css } = await generator.generate(`
@@ -113,7 +113,7 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
       ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
-    `);
+    `)
 
     expect(
       removeUnusedCSS({
@@ -144,8 +144,8 @@ describe('animated', () => {
           [`.animated-delay-${i}\\.${removeLastZero(i + 1)}s`]: { animationDelay: `${i}.${removeLastZero(i + 1)}s` },
         })),
       ),
-    );
-  });
+    )
+  })
 
   test('animated-duration', async () => {
     const { css } = await generator.generate(`
@@ -157,7 +157,7 @@ describe('animated', () => {
       ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
       ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
       ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
-    `);
+    `)
 
     expect(
       removeUnusedCSS({
@@ -192,8 +192,8 @@ describe('animated', () => {
           [`.animated-duration-${i}\\.${removeLastZero(i + 1)}s`]: { animationDuration: `${i}.${removeLastZero(i + 1)}s` },
         })),
       ),
-    );
-  });
+    )
+  })
 
   test('autocomplete', async () => {
     const autocomplete = createAutocomplete(createGenerator({
@@ -202,16 +202,16 @@ describe('animated', () => {
         presetAttributify(),
         animatedUno(),
       ],
-    }));
+    }))
 
-    expect(await autocomplete.suggest('animated')).toMatchSnapshot();
+    expect(await autocomplete.suggest('animated')).toMatchSnapshot()
 
-    expect(await autocomplete.suggest('animated-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('animated-')).toMatchSnapshot()
 
-    expect(await autocomplete.suggest('animated-repeat-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('animated-repeat-')).toMatchSnapshot()
 
-    expect(await autocomplete.suggest('animated-delay-')).toMatchSnapshot();
+    expect(await autocomplete.suggest('animated-delay-')).toMatchSnapshot()
 
-    expect(await autocomplete.suggest('animated-duration-')).toMatchSnapshot();
-  });
-});
+    expect(await autocomplete.suggest('animated-duration-')).toMatchSnapshot()
+  })
+})

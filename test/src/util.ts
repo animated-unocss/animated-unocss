@@ -1,9 +1,9 @@
-import { omit } from 'lodash-es';
+import { omit } from 'lodash-es'
 
 export function removeUnusedCSS(cssJson: object) {
-  return omit(cssJson, ['*,::before,::after', '::backdrop']);
+  return omit(cssJson, ['*,::before,::after', '::backdrop'])
 }
 
 export function removeLastZero(v: string | number) {
-  return `${v}`.replace(/0+$/, '');
+  return `${v}`.replace(/0+$/, '')
 }

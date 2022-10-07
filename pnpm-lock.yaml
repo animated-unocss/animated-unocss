@@ -38,7 +38,10 @@ importers:
 
   example/vue3:
     specifiers:
+      '@unocss/preset-attributify': ^0.45.26
+      '@unocss/reset': ^0.45.26
       '@vitejs/plugin-vue': ^3.1.0
+      animate.css: 4.1.1
       animated-unocss: workspace:*
       typescript: ^4.6.4
       unocss: ^0.45.26
@@ -50,7 +53,10 @@ importers:
       unocss: 0.45.26_vite@3.1.6
       vue: 3.2.40
     devDependencies:
+      '@unocss/preset-attributify': 0.45.26
+      '@unocss/reset': 0.45.26
       '@vitejs/plugin-vue': 3.1.2_vite@3.1.6+vue@3.2.40
+      animate.css: 4.1.1
       typescript: 4.8.4
       vite: 3.1.6
       vue-tsc: 0.40.13_typescript@4.8.4
@@ -657,7 +663,6 @@ packages:
       '@unocss/vite': 0.45.26_vite@3.1.6
     transitivePeerDependencies:
       - vite
-    dev: false
 
   /@unocss/autocomplete/0.45.26:
     resolution: {integrity: sha512-11BmWkdrHjQEKfksNkHG5a+PSqjfaaAAjHkQRkvLHUu5U/YGohYMIfp8gC03buG/ufhs7hSX1Ssi7qhkHQniXA==}
@@ -789,7 +794,6 @@ packages:
       '@unocss/transformer-directives': 0.45.26
       magic-string: 0.26.6
       vite: 3.1.6
-    dev: false
 
   /@vitejs/plugin-vue/3.1.2_vite@3.1.6+vue@3.2.40:
     resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
@@ -3472,7 +3476,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - vite
-    dev: false
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}

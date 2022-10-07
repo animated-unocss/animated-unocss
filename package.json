@@ -1,11 +1,11 @@
 {
   "name": "@animated-unocss/monorepo",
+  "type": "module",
+  "version": "0.0.0",
   "private": "true",
   "description": "A configuration to use Animate.css with UnoCSS.",
-  "author": "Elone Hoo <huchengyea@163.com>",
-  "type": "module",
   "license": "MIT",
-  "version": "0.0.0",
+  "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
     "core": "pnpm -C core run build",
     "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
@@ -13,7 +13,8 @@
     "test": "pnpm -C test run test",
     "coverage": "vitest run --coverage",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "example:vue3": "pnpm -C example/vue3 run dev"
   },
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
