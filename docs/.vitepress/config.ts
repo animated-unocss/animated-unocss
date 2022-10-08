@@ -63,6 +63,19 @@ export default defineConfig({
           ]
         },
         {
+          text:'utilities',
+          items:[
+            {
+              text:'Animation Name',
+              link:'/utilities/animation-name'
+            },
+            {
+              text:'Animation Duration',
+              link:'/utilities/animation-duration'
+            }
+          ]
+        },
+        {
           text:'Demo',
           items:[
             {
