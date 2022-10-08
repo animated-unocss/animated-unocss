@@ -40,7 +40,7 @@
         <img
           class="w-32 animated"
           :class="{ [`animated-${animation}`]: shouldAnimate, 'animated-infinite': repeat }"
-          src="https://raw.githubusercontent.com/unocss/unocss/main/playground/public/icon-gray.svg"
+          src="/unocss.svg"
           @animationend="reset"
         >
         <button

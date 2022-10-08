@@ -54,10 +54,19 @@ export default defineConfig({
     sidebar: {
       '/':[
         {
+          text:'Guide',
+          items:[
+            {
+              text:'Getting Started',
+              link:'/guide/'
+            }
+          ]
+        },
+        {
           text:'Demo',
           items:[
             {
-              text:'Demo',
+              text:'Live',
               link:'/demo/'
             }
           ]
