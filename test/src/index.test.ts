@@ -4,9 +4,15 @@ import { createAutocomplete } from '@unocss/autocomplete'
 import postcss from 'postcss'
 import postcssJs from 'postcss-js'
 import { animatedUno } from 'animated-unocss'
-import { durationShortcuts } from '../../core/src/animated'
 import animated from './animated.json'
 import { removeLastZero, removeUnusedCSS } from './util'
+
+const durationShortcuts = {
+  faster: 0.5,
+  fast: 0.8,
+  slow: 2,
+  slower: 3,
+}
 
 describe('animated.json', () => {
   test('数据的 key 均为 kebabCase 格式', () => {
