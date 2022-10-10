@@ -5,9 +5,7 @@
 <h1 align="center">Animated UnoCSS</h1>
 
 <p align="center">
-
-A configuration to use [Animate.css](https://github.com/animate-css/animate.css) with [UnoCSS](https://github.com/unocss/unocss).
-
+A configuration to use <a href="https://github.com/animate-css/animate.css">Animate.css</a> with <a href="https://github.com/unocss/unocss">UnoCSS</a>.
 </p>
 
 <p align="center">
