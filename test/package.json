@@ -7,16 +7,21 @@
   "license": "MIT",
   "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
     "@unocss/autocomplete": "^0.45.26",
+    "@vitest/coverage-c8": "^0.24.0",
     "animated-unocss": "workspace:*",
     "lodash-es": "^4.17.21",
     "postcss": "^8.4.17",
     "postcss-js": "^4.0.0",
     "unocss": "^0.45.26",
     "vitest": "0.23.4"
+  },
+  "dependencies": {
+    "c8": "^7.12.0"
   }
 }
