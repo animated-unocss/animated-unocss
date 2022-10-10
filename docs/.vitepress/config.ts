@@ -72,6 +72,19 @@ export default defineConfig({
             {
               text:'Animation Duration',
               link:'/utilities/animation-duration'
+            },
+            {
+              text:'Animation Delay',
+              link:'/utilities/animation-delay'
+            },
+            {
+              text:'Animation Iteration Count',
+              link:'/utilities/animation-iteration-count'
+            }
+            ,
+            {
+              text:'Preset Attributify',
+              link:'/utilities/preset-attributify'
             }
           ]
         },
