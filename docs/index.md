@@ -21,7 +21,7 @@ hero:
       link: /demo/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/elonehoo/pistachio
+      link: https://github.com/elonehoo/animated-unocss
 
 ---
 
