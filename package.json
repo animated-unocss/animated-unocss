@@ -1,7 +1,7 @@
 {
   "name": "@animated-unocss/monorepo",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": "true",
   "description": "A configuration to use Animate.css with UnoCSS.",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "example:vue3": "pnpm -C example/vue3 run dev",
-    "docs:dev":"pnpm -C docs run dev",
+    "docs:dev": "pnpm -C docs run dev",
     "docs:build": "pnpm -C docs run build"
   },
   "devDependencies": {
