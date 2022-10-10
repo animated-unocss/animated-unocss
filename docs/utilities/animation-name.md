@@ -12,3 +12,10 @@
 ```
 
 Refer [the demo](../demo/index.md) to see the available animations in action.
+
+<script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(()=>{
+document.getElementsByClassName('VPImage')[0].classList.add('animate-rubber-band','animate-count-infinite','animate-duration-1s')
+})
+</script>

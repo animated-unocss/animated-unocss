@@ -15,3 +15,9 @@ Here `[n]` is one of `number`. You can also use arbitrary values instead.
 <div class="animated animated-bounce animated-repeat-666">Baz</div>
 ```
 
+<script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(()=>{
+document.getElementsByClassName('VPImage')[0].classList.add('animate-rubber-band','animate-count-infinite','animate-duration-1s')
+})
+</script>

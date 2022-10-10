@@ -16,3 +16,10 @@ Here [time] is one of {75, 100, 150, 200, 300, 500, 700, 1000} and is interprete
 <div class="animated animated-duration-300">Foo</div>
 <div class="animated animated-duration-2s">Bar</div>
 ```
+
+<script setup lang="ts">
+import { onMounted } from 'vue'
+onMounted(()=>{
+document.getElementsByClassName('VPImage')[0].classList.add('animate-rubber-band','animate-count-infinite','animate-duration-1s')
+})
+</script>
