@@ -8,7 +8,7 @@
   "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
     "core": "pnpm -C core run build",
-    "release": "bumpp package.json core/package.json --commit --push --tag && pnpm -r publish --access public",
+    "release": "bumpp package.json core/package.json docs/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
     "test": "pnpm -C test run test",
     "coverage": "pnpm -C test run coverage",
