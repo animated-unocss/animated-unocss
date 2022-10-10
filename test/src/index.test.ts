@@ -15,20 +15,20 @@ const durationShortcuts = {
 }
 
 describe('animated.json', () => {
-  test('数据的 key 均为 kebabCase 格式', () => {
+  test('The keys of the data are in kebabCase format', () => {
     Object.keys(animated).forEach((key) => {
       expect(/^[a-z-]+$/.test(key)).is.true
     })
   })
 
-  test('动画名称为 une 开头的 camelCase 格式', () => {
+  test('animation names starting with une in camelCase format', () => {
     Object.values(animated).forEach(({ animationName, css }) => {
       expect(/^une[A-Z]/.test(animationName)).is.true
       expect(/^une[A-Z]/.test(css['animation-name'])).is.true
     })
   })
 
-  test('样式名为 kebabCase 格式', () => {
+  test('The style name is kebabCase format', () => {
     Object.values(animated).forEach(({ css }) => {
       Object.keys(css).forEach((key) => {
         expect(/^[a-z-]+$/.test(key)).is.true
@@ -71,7 +71,6 @@ describe('animated', () => {
       ...postcssJs.objectify(postcss.parse(css)),
     }) as CSSObject
 
-    // 均生成了 css 样式及 @keyframes
     Object.entries(animated).forEach(([key, { animationName }]) => {
       expect(styles[`.animated-${key}`]).toBeDefined()
       expect(styles[`@keyframes ${animationName}`]).toBeDefined()
@@ -83,9 +82,9 @@ describe('animated', () => {
       animated-infinite
       animated-repeat-infinite
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}`).join(' ')}
-      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0_1, 1_2, ... ( 不符合规则的样式类 ) */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
-      ${/* a ~ z ( 不符合规则的样式类 ) */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
+      ${/* 0.1, 1.2, ...*/ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0_1, 1_2, ...*/ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
+      ${/* a ~ z */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
     `)
 
     expect(
@@ -102,7 +101,7 @@ describe('animated', () => {
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-repeat-${i}`]: { animationIterationCount: `${i}` },
         })),
-        // 0.1, 1.2, ... ( 小数 )
+        // 0.1, 1.2, ...
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-repeat-${i}\\.${removeLastZero(i + 1)}`]: { animationIterationCount: `${i}.${removeLastZero(i + 1)}` },
         })),
@@ -116,9 +115,9 @@ describe('animated', () => {
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}`).join(' ')}
       ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
       ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}s`).join(' ')}
-      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
-      ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
+      ${/* 0.1, 1.2, ... */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ...*/ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1s, 1.2s, ...*/ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
     `)
 
     expect(
@@ -140,8 +139,8 @@ describe('animated', () => {
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-delay-${i}s`]: { animationDelay: `${i}s` },
         })),
-        // 0.1, 1.2, ... ( 小数 )
-        // 0.1ms, 1.2ms, ... ( 小数 )
+        // 0.1, 1.2, ...
+        // 0.1ms, 1.2ms, ...
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-delay-${i}\\.${removeLastZero(i + 1)},\n.animated-delay-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDelay: `${i}.${removeLastZero(i + 1)}ms` },
         })),
@@ -160,9 +159,10 @@ describe('animated', () => {
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}`).join(' ')}
       ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}ms`).join(' ')}
       ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}s`).join(' ')}
-      ${/* 0.1, 1.2, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0.1ms, 1.2ms, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
-      ${/* 0.1s, 1.2s, ... ( 小数 ) */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
+      ${/* 0.1, 1.2, ...*/
+      Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ...*/ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1s, 1.2s, ... */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
     `)
 
     expect(
@@ -188,8 +188,8 @@ describe('animated', () => {
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-duration-${i}s`]: { animationDuration: `${i}s` },
         })),
-        // 0.1, 1.2, ... ( 小数 )
-        // 0.1ms, 1.2ms, ... ( 小数 )
+        // 0.1, 1.2, ...
+        // 0.1ms, 1.2ms, ...
         ...Array.from({ length: 67 }, (_, i) => ({
           [`.animated-duration-${i}\\.${removeLastZero(i + 1)},\n.animated-duration-${i}\\.${removeLastZero(i + 1)}ms`]: { animationDuration: `${i}.${removeLastZero(i + 1)}ms` },
         })),
@@ -201,7 +201,7 @@ describe('animated', () => {
     )
   })
 
-  test('autocomplete', async () => {
+  test.skip('autocomplete', async () => {
     const autocomplete = createAutocomplete(createGenerator({
       presets: [
         presetUno(),
