@@ -26,13 +26,13 @@ importers:
     specifiers:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
       '@unocss/autocomplete': 0.45.26
-      '@unocss/preset-mini': 0.45.26
+      '@unocss/preset-mini': 0.45.30
       animate.css: 4.1.1
       unocss: 0.45.26
     devDependencies:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
       '@unocss/autocomplete': 0.45.26
-      '@unocss/preset-mini': 0.45.26
+      '@unocss/preset-mini': 0.45.30
       animate.css: 4.1.1
       unocss: 0.45.26_vite@3.1.6
 
@@ -937,6 +937,10 @@ packages:
   /@unocss/core/0.45.26:
     resolution: {integrity: sha512-V7lNAXy1Ou2+UsD8n8a0ynE7BPuMtZSn6dQtrhNvtkstEBZtBAvlGM07wnSqwZfYeKs8k/MA6Z7S0yJKQzcl1Q==}
 
+  /@unocss/core/0.45.30:
+    resolution: {integrity: sha512-KjEdE8F5AZ+rJ4M07CttZd79h8FMqiCy6ldNS8xyd3qX8wy+BrE9n5tSV8KmbuORkNBWYG5yrkQvo7RQmASDzA==}
+    dev: true
+
   /@unocss/inspector/0.45.26:
     resolution: {integrity: sha512-rteTaMVWstGlCG5+k744kFzQLYAWgCf2ys2CRfm6SX7YC2JGBmELCwSABGrylkyItTnH50ayZcDk21GKEfC/Mw==}
     dependencies:
@@ -961,6 +965,12 @@ packages:
     resolution: {integrity: sha512-Kab6F2pZHzJudGene6NwGMYA96fuU8gNjCVouSd6oqFF1ZhEBxkQOR56TRjppyCi0MU89hciV5T6kcVZDquGUw==}
     dependencies:
       '@unocss/core': 0.45.26
+
+  /@unocss/preset-mini/0.45.30:
+    resolution: {integrity: sha512-gWwmNiahPDu3zFDauFLgdpAS+MEjuDXlL4wGi9YgSiZGqzDLl+QnvYagktNb0myIlamwt//kUtxlUF/MXKe6MQ==}
+    dependencies:
+      '@unocss/core': 0.45.30
+    dev: true
 
   /@unocss/preset-tagify/0.45.26:
     resolution: {integrity: sha512-4zhdD/EKW5BYsiKO8PQdUXU4I5riJNM9ykEyhESFaCM6/+3a8GRvrnON57cRuiqX5LvJeXfbtGXQCOdMGEIi4Q==}
