@@ -25,13 +25,13 @@ importers:
   core:
     specifiers:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
-      '@unocss/autocomplete': 0.45.26
+      '@unocss/autocomplete': 0.45.30
       '@unocss/preset-mini': 0.45.26
       animate.css: 4.1.1
       unocss: 0.45.26
     devDependencies:
       '@elonehoo/vite-plugin-type-ts': 0.0.1
-      '@unocss/autocomplete': 0.45.26
+      '@unocss/autocomplete': 0.45.30
       '@unocss/preset-mini': 0.45.26
       animate.css: 4.1.1
       unocss: 0.45.26_vite@3.1.6
@@ -904,6 +904,12 @@ packages:
 
   /@unocss/autocomplete/0.45.26:
     resolution: {integrity: sha512-11BmWkdrHjQEKfksNkHG5a+PSqjfaaAAjHkQRkvLHUu5U/YGohYMIfp8gC03buG/ufhs7hSX1Ssi7qhkHQniXA==}
+    dependencies:
+      lru-cache: 7.14.0
+    dev: true
+
+  /@unocss/autocomplete/0.45.30:
+    resolution: {integrity: sha512-DOujBBowZKdb/V1yw6fimMcXbJ5q/vKjxHdZ4A7/o3c0DO6KozjpqQmxwaF8YAWO75gxxQSsILYYYWnh14hwKQ==}
     dependencies:
       lru-cache: 7.14.0
     dev: true
