@@ -38,6 +38,6 @@
     "@unocss/autocomplete": "0.45.26",
     "@unocss/preset-mini": "0.45.26",
     "animate.css": "4.1.1",
-    "unocss": "0.45.26"
+    "unocss": "0.45.30"
   }
 }
