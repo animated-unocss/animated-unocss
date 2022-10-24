@@ -23,9 +23,9 @@
     "@elonehoo/rimraf": "0.0.1",
     "@types/node": "18.8.3",
     "bumpp": "8.2.1",
-    "eslint": "8.24.0",
-    "pnpm": "7.13.2",
+    "eslint": "8.26.0",
+    "pnpm": "7.14.0",
     "typescript": "4.8.4",
-    "vite": "3.1.6"
+    "vite": "3.1.8"
   }
 }
