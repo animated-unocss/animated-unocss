@@ -15,19 +15,19 @@
     "animated-unocss": "workspace:*"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.10",
+    "@iconify-json/carbon": "^1.1.11",
     "@unocss/reset": "^0.46.5",
     "@vitejs/plugin-vue": "^3.2.0",
-    "@vueuse/core": "^9.5.0",
+    "@vueuse/core": "^9.6.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
     "https-localhost": "^4.7.1",
     "jiti": "^1.16.0",
-    "pnpm": "^7.17.0",
+    "pnpm": "^7.17.1",
     "typescript": "^4.9.3",
     "unocss": "^0.46.5",
     "animate.css": "4.1.1",
-    "unplugin-vue-components": "^0.22.9",
+    "unplugin-vue-components": "^0.22.11",
     "vitepress": "1.0.0-alpha.29",
     "workbox-window": "^6.5.4"
   }
