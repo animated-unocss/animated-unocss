@@ -32,7 +32,7 @@ jobs:
         run: pnpm run docs:build
 
       - name: Run echo cname
-        run: echo 'animated-unocss.elonehoo.xyz' > docs/.vitepress/dist/CNAME
+        run: echo 'animated-unocss.elonehoo.me' > docs/.vitepress/dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
