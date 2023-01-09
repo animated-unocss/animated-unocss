@@ -40,7 +40,7 @@ importers:
     specifiers:
       '@iconify-json/carbon': ^1.1.13
       '@unocss/reset': ^0.48.3
-      '@vitejs/plugin-vue': ^3.2.0
+      '@vitejs/plugin-vue': ^4.0.0
       '@vueuse/core': ^9.10.0
       animate.css: 4.1.1
       animated-unocss: workspace:*
@@ -61,7 +61,7 @@ importers:
     devDependencies:
       '@iconify-json/carbon': 1.1.13
       '@unocss/reset': 0.48.3
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.45
+      '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
       '@vueuse/core': 9.10.0_vue@3.2.45
       animate.css: 4.1.1
       esno: 0.16.3
@@ -70,7 +70,7 @@ importers:
       jiti: 1.16.1
       pnpm: 7.23.0
       typescript: 4.9.4
-      unocss: 0.48.3_vite@3.2.5
+      unocss: 0.48.3_vite@4.0.4
       unplugin-vue-components: 0.22.12_vue@3.2.45
       vitepress: 1.0.0-alpha.35_tbpndr44ulefs3hehwpi2mkf2y
       workbox-window: 6.5.4
@@ -79,7 +79,7 @@ importers:
     specifiers:
       '@unocss/preset-attributify': ^0.48.3
       '@unocss/reset': ^0.48.3
-      '@vitejs/plugin-vue': ^3.2.0
+      '@vitejs/plugin-vue': ^4.0.0
       animate.css: 4.1.1
       animated-unocss: workspace:*
       typescript: ^4.9.4
@@ -94,7 +94,7 @@ importers:
     devDependencies:
       '@unocss/preset-attributify': 0.48.3
       '@unocss/reset': 0.48.3
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.45
+      '@vitejs/plugin-vue': 4.0.0_vite@3.2.5+vue@3.2.45
       animate.css: 4.1.1
       typescript: 4.9.4
       vite: 3.2.5
@@ -1130,6 +1130,7 @@ packages:
     transitivePeerDependencies:
       - rollup
       - vite
+    dev: false
 
   /@unocss/astro/0.48.3_vite@4.0.4:
     resolution: {integrity: sha512-lEDk/ckjl6S7dxbzSi+EdYjesMixu5kkjm61lyjpCCMrvFb2yeFXEMuklw8vYKb1M5Z1CKxQBr6IRiXT/reKFg==}
@@ -1428,6 +1429,7 @@ packages:
       vite: 3.2.5
     transitivePeerDependencies:
       - rollup
+    dev: false
 
   /@unocss/vite/0.48.3_vite@4.0.4:
     resolution: {integrity: sha512-BdbhvcIZ+bN2o5o+9Aes5AxYBFJ71oY/da2A0RMrhedosSabu4vpZ6MVtzPXn6dDuwNC4N0T9/6GFPcMYXlfbQ==}
@@ -1449,11 +1451,11 @@ packages:
       - rollup
     dev: true
 
-  /@vitejs/plugin-vue/3.2.0_vite@3.2.5+vue@3.2.45:
-    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
+  /@vitejs/plugin-vue/4.0.0_vite@3.2.5+vue@3.2.45:
+    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
       vite: 3.2.5
@@ -4957,6 +4959,7 @@ packages:
       - rollup
       - supports-color
       - vite
+    dev: false
 
   /unocss/0.48.3_vite@4.0.4:
     resolution: {integrity: sha512-kPC9/4tM2lG9ZtFR1BpsZiLYiHyKL6et4UEXYOGWC55/mp/p5hMgblXJpzBj7R+Rl8ecKJ5IX/5KMMyN1K41fA==}
