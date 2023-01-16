@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "animated-unocss": "workspace:*",
-    "unocss": "^0.48.3",
+    "unocss": "^0.48.4",
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@unocss/preset-attributify": "^0.48.3",
-    "@unocss/reset": "^0.48.3",
+    "@unocss/preset-attributify": "^0.48.4",
+    "@unocss/reset": "^0.48.4",
     "@vitejs/plugin-vue": "^4.0.0",
     "animate.css": "4.1.1",
     "typescript": "^4.9.4",
