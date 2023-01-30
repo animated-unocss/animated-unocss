@@ -16,19 +16,19 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.14",
-    "@unocss/reset": "^0.48.4",
+    "@unocss/reset": "^0.49.1",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vueuse/core": "^9.11.1",
+    "@vueuse/core": "^9.12.0",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
     "https-localhost": "^4.7.1",
     "jiti": "^1.16.2",
-    "pnpm": "^7.25.1",
+    "pnpm": "^7.26.2",
     "typescript": "^4.9.4",
-    "unocss": "^0.48.4",
+    "unocss": "^0.49.1",
     "animate.css": "4.1.1",
-    "unplugin-vue-components": "^0.22.12",
-    "vitepress": "1.0.0-alpha.40",
+    "unplugin-vue-components": "^0.23.0",
+    "vitepress": "1.0.0-alpha.43",
     "workbox-window": "^6.5.4"
   }
 }
