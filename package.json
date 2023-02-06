@@ -21,11 +21,11 @@
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
     "@elonehoo/rimraf": "0.0.1",
-    "@types/node": "18.11.18",
+    "@types/node": "18.11.19",
     "bumpp": "8.2.1",
     "eslint": "8.33.0",
     "pnpm": "7.26.3",
     "typescript": "4.9.5",
-    "vite": "4.1.0"
+    "vite": "4.1.1"
   }
 }
