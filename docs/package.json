@@ -7,7 +7,7 @@
   "author": "Elone Hoo <huchengyea@163.com>",
   "scripts": {
     "dev": "vitepress --port 3344 --open --host",
-    "build": "vitepress build",
+    "build": "pnpm -C ../ run core && vitepress build",
     "serve": "vitepress serve"
   },
   "dependencies": {
