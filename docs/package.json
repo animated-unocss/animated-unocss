@@ -15,20 +15,20 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.14",
-    "@unocss/reset": "^0.49.4",
+    "@iconify-json/carbon": "^1.1.16",
+    "@unocss/reset": "^0.50.4",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vueuse/core": "^9.12.0",
+    "@vueuse/core": "^9.13.0",
     "animate.css": "4.1.1",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.17.0",
-    "pnpm": "^7.27.0",
+    "jiti": "^1.17.2",
+    "pnpm": "^7.29.1",
     "typescript": "^4.9.5",
-    "unocss": "^0.49.4",
-    "unplugin-vue-components": "^0.23.0",
-    "vitepress": "1.0.0-alpha.46",
+    "unocss": "^0.50.4",
+    "unplugin-vue-components": "^0.24.1",
+    "vitepress": "1.0.0-alpha.51",
     "workbox-window": "^6.5.4"
   }
 }
