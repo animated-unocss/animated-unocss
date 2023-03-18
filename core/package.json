@@ -35,9 +35,9 @@
   },
   "devDependencies": {
     "@elonehoo/vite-plugin-type-ts": "0.0.1",
-    "@unocss/autocomplete": "0.50.4",
-    "@unocss/preset-mini": "0.50.4",
+    "@unocss/autocomplete": "0.50.6",
+    "@unocss/preset-mini": "0.50.6",
     "animate.css": "4.1.1",
-    "unocss": "0.50.4"
+    "unocss": "0.50.6"
   }
 }
