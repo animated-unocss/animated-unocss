@@ -36,7 +36,7 @@ const copy: EventListener = () => {
     <div
       class="relative flex items-center justify-center overflow-hidden rounded-md bg-[#f0f0f0] p-20 sm:p-32"
     >
-      <Animated />
+      <!-- <Animated /> -->
       <img
         class="w-32 animated"
         :class="{ [`animated-${animation}`]: shouldAnimate, 'animated-infinite': repeat }"
