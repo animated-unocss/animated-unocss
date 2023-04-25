@@ -2,7 +2,7 @@ import { type Preset } from 'unocss'
 import { animatedRules } from './animated'
 import animatedName from './animatedName.json'
 
-export function animatedUno(): Preset {
+export function animatedUno(): Preset<any> {
   return {
     name: 'animated-unocss',
     rules: [
