@@ -18,5 +18,5 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
-  ],
+  ]
 })

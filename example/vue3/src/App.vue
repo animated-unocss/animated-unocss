@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Animated from './components/Animated.vue'
 import animations from './utils/animations'
 const animation = ref(Object.values(animations)[0][0].value)
 const repeat = ref(false)
