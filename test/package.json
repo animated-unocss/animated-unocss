@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "private": true,
   "description": "A configuration to use Animate.css with UnoCSS.",
-  "license": "MIT",
   "author": "Elone Hoo <huchengyea@163.com>",
+  "license": "MIT",
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "c8": "^7.13.0"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
@@ -20,8 +23,5 @@
     "postcss-js": "^4.0.1",
     "unocss": "^0.50.4",
     "vitest": "0.29.2"
-  },
-  "dependencies": {
-    "c8": "^7.13.0"
   }
 }

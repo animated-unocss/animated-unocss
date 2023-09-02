@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { description, discord, font, github, name, releases, twitter,} from './meta'
-import {version} from '../../package.json'
+import { version } from '../../package.json'
+import { description, discord, font, github, name, releases, twitter } from './meta'
 
 export default defineConfig({
   lang: 'en-US',
@@ -52,52 +52,51 @@ export default defineConfig({
       },
     ],
     sidebar: {
-      '/':[
+      '/': [
         {
-          text:'Guide',
-          items:[
+          text: 'Guide',
+          items: [
             {
-              text:'Getting Started',
-              link:'/guide/'
-            }
-          ]
+              text: 'Getting Started',
+              link: '/guide/',
+            },
+          ],
         },
         {
-          text:'utilities',
-          items:[
+          text: 'utilities',
+          items: [
             {
-              text:'Animation Name',
-              link:'/utilities/animation-name'
+              text: 'Animation Name',
+              link: '/utilities/animation-name',
             },
             {
-              text:'Animation Duration',
-              link:'/utilities/animation-duration'
+              text: 'Animation Duration',
+              link: '/utilities/animation-duration',
             },
             {
-              text:'Animation Delay',
-              link:'/utilities/animation-delay'
+              text: 'Animation Delay',
+              link: '/utilities/animation-delay',
             },
             {
-              text:'Animation Iteration Count',
-              link:'/utilities/animation-iteration-count'
-            }
-            ,
+              text: 'Animation Iteration Count',
+              link: '/utilities/animation-iteration-count',
+            },
             {
-              text:'Preset Attributify',
-              link:'/utilities/preset-attributify'
-            }
-          ]
+              text: 'Preset Attributify',
+              link: '/utilities/preset-attributify',
+            },
+          ],
         },
         {
-          text:'Demo',
-          items:[
+          text: 'Demo',
+          items: [
             {
-              text:'Live',
-              link:'/demo/'
-            }
-          ]
-        }
-      ]
-    }
+              text: 'Live',
+              link: '/demo/',
+            },
+          ],
+        },
+      ],
+    },
   },
 })

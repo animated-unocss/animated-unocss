@@ -1,7 +1,7 @@
-import { type CSSObject, type Rule } from 'unocss';
-import { type Theme } from '@unocss/preset-mini';
-import { handler } from '@unocss/preset-mini/utils';
-import animatedJSON from './animated.json';
+import { type CSSObject, type Rule } from 'unocss'
+import { type Theme } from '@unocss/preset-mini'
+import { handler } from '@unocss/preset-mini/utils'
+import animatedJSON from './animated.json'
 
 function getAnimated() {
   return animatedJSON as unknown as {
@@ -10,7 +10,7 @@ function getAnimated() {
       css: CSSObject
       keyframes: string
     }
-  };
+  }
 }
 
 export const durationShortcuts = {
@@ -18,7 +18,7 @@ export const durationShortcuts = {
   fast: 0.8,
   slow: 2,
   slower: 3,
-};
+}
 
 /**
  * animate.css
@@ -32,12 +32,12 @@ export const animatedRules: Rule<Theme>[] = [
   [
     new RegExp(`^animated-(${Object.keys(animatedJSON).join('|')})$`),
     ([, name]) => {
-      const { animationName, css, keyframes } = getAnimated()[name];
+      const { animationName, css, keyframes } = getAnimated()[name]
 
       return [
         `@keyframes ${animationName} { ${keyframes} }`,
         css,
-      ];
+      ]
     },
     {
       autocomplete: [
@@ -48,11 +48,11 @@ export const animatedRules: Rule<Theme>[] = [
   [
     /^animated-(infinite|(repeat-(infinite|(\d+(\.\d+)?))))$/,
     ([,,, repeat]) => {
-      const isInfinite = !repeat || repeat === 'infinite';
+      const isInfinite = !repeat || repeat === 'infinite'
 
       return {
         'animation-iteration-count': isInfinite ? 'infinite' : repeat,
-      };
+      }
     },
     {
       autocomplete: [
@@ -80,12 +80,12 @@ export const animatedRules: Rule<Theme>[] = [
       if (shortcut) {
         return {
           'animation-duration': `calc(var(--une-animated-duration) * ${durationShortcuts[shortcut as keyof typeof durationShortcuts]});`,
-        };
+        }
       }
 
       return {
         'animation-duration': v === 'none' ? '0ms' : handler.bracket.cssvar.time(v),
-      };
+      }
     },
     {
       autocomplete: [
@@ -95,4 +95,4 @@ export const animatedRules: Rule<Theme>[] = [
       ],
     },
   ],
-];
+]

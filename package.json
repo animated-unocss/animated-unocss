@@ -2,12 +2,8 @@
   "name": "animated-unocss",
   "version": "0.0.5",
   "description": "A configuration to use Animate.css with UnoCSS.",
-  "license": "MIT",
   "author": "Elone Hoo <hi@elonehoo.me>",
-  "keywords": [
-    "unocss",
-    "animated.css"
-  ],
+  "license": "MIT",
   "homepage": "https://github.com/elonehoo/animated-unocss#readme",
   "repository": {
     "type": "git",
@@ -16,9 +12,10 @@
   "bugs": {
     "url": "https://github.com/elonehoo/animated-unocss/issues"
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "keywords": [
+    "unocss",
+    "animated.css"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -27,6 +24,9 @@
     },
     "./*": "./*"
   },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "*.d.ts"

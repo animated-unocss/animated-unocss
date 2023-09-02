@@ -81,8 +81,8 @@ describe('animated', () => {
       animated-infinite
       animated-repeat-infinite
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}`).join(' ')}
-      ${/* 0.1, 1.2, ...*/ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0_1, 1_2, ...*/ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0.1, 1.2, ... */ Array.from({ length: 67 }, (_, i) => `animated-repeat-${i}.${removeLastZero(i + 1)}`).join(' ')}
+      ${/* 0_1, 1_2, ... */ Array.from({ length: 7 }, (_, i) => `animated-repeat-${i}_${removeLastZero(i + 1)}`).join(' ')}
       ${/* a ~ z */ Array.from({ length: 26 }, (_, i) => `animated-repeat-${String.fromCharCode(97 + i)}`)}
     `)
 
@@ -115,8 +115,8 @@ describe('animated', () => {
       ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}ms`).join(' ')}
       ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}s`).join(' ')}
       ${/* 0.1, 1.2, ... */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0.1ms, 1.2ms, ...*/ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
-      ${/* 0.1s, 1.2s, ...*/ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ... */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1s, 1.2s, ... */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}.${removeLastZero(i + 1)}s`).join(' ')}
     `)
 
     expect(
@@ -158,9 +158,9 @@ describe('animated', () => {
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}`).join(' ')}
       ${/* 0ms ~ 66ms */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}ms`).join(' ')}
       ${/* 0s ~ 66s */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}s`).join(' ')}
-      ${/* 0.1, 1.2, ...*/
+      ${/* 0.1, 1.2, ... */
       Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}`).join(' ')}
-      ${/* 0.1ms, 1.2ms, ...*/ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
+      ${/* 0.1ms, 1.2ms, ... */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}ms`).join(' ')}
       ${/* 0.1s, 1.2s, ... */ Array.from({ length: 67 }, (_, i) => `animated-duration-${i}.${removeLastZero(i + 1)}s`).join(' ')}
     `)
 
@@ -199,5 +199,4 @@ describe('animated', () => {
       ),
     )
   })
-
 })

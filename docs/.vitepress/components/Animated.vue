@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <div class="
+  <div
+    class="
     animated
     animated-bounce
     animated-flash

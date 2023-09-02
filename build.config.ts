@@ -4,9 +4,9 @@ export default defineBuildConfig({
   entries: [
     'src/index',
   ],
-  externals:[
+  externals: [
     '@unocss/preset-mini/utils',
-    '@unocss/core'
+    '@unocss/core',
   ],
   declaration: true,
   clean: true,
