@@ -1,6 +1,6 @@
 {
   "name": "animated-unocss",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A configuration to use Animate.css with UnoCSS.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
