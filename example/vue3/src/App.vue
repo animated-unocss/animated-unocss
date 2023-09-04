@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import animations from './utils/animations'
+
 const animation = ref(Object.values(animations)[0][0].value)
 const repeat = ref(false)
 const shouldAnimate = ref(false)
 const copied = ref(false)
-const handleRepeat: EventListener = (e) => {
+const handleRepeat: EventListener = () => {
   repeat.value = !repeat.value
 }
 const handleChange: EventListener = (e) => {
@@ -82,8 +83,8 @@ const copy: EventListener = () => {
         class="appearance-none border-x border-[#333] bg-[#f0f0f0] py-1 px-4"
         @change="handleChange"
       >
-        <optgroup v-for="(keyframes, type) in animations" :label="type">
-          <option v-for="keyframe in keyframes" :value="keyframe.value">
+        <optgroup v-for="(keyframes, type) in animations" :key="type" :label="type">
+          <option v-for="keyframe in keyframes" :key="keyframe.value" :value="keyframe.value">
             {{ keyframe.label }}
           </option>
         </optgroup>

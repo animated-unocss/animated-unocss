@@ -26,6 +26,6 @@ export default defineConfig({
           scale: 1.2,
         }),
       ],
-    })as unknown as Plugin,
+    }) as unknown as Plugin,
   ],
 })
