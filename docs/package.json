@@ -18,7 +18,7 @@
     "@iconify-json/carbon": "^1.1.16",
     "@unocss/reset": "^0.50.4",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^10.4.1",
     "animate.css": "4.1.1",
     "esno": "^0.16.3",
     "fast-glob": "^3.2.12",
