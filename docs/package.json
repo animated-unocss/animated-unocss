@@ -29,6 +29,6 @@
     "unocss": "^0.50.4",
     "unplugin-vue-components": "^0.24.1",
     "vitepress": "1.0.0-alpha.51",
-    "workbox-window": "^6.5.4"
+    "workbox-window": "^7.0.0"
   }
 }
