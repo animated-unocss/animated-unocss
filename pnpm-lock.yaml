@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -106,8 +110,8 @@ importers:
         specifier: ^1.17.2
         version: 1.17.2
       pnpm:
-        specifier: ^7.29.1
-        version: 7.29.1
+        specifier: ^8.8.0
+        version: 8.8.0
       typescript:
         specifier: ^4.9.5
         version: 4.9.5
@@ -4857,14 +4861,14 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@7.29.1:
-    resolution: {integrity: sha512-dn+65B2XpMIin7sQZvBIJ2Zyx8Z7LK95qyAvgEPE8qXkWYL/LuwpfMfK9Muc7+zNnpPwiQgtGEsxgOtuabFibQ==}
-    engines: {node: '>=14.6'}
+  /pnpm@8.3.1:
+    resolution: {integrity: sha512-0mT2ZAv08J3nz8xUdWhRW88GE89IWgPo/xZhb6acQXK2+aCikl7kT7Bg31ZcnJqOrwYXSed68xjLd/ZoSnBR8w==}
+    engines: {node: '>=16.14'}
     hasBin: true
     dev: true
 
-  /pnpm@8.3.1:
-    resolution: {integrity: sha512-0mT2ZAv08J3nz8xUdWhRW88GE89IWgPo/xZhb6acQXK2+aCikl7kT7Bg31ZcnJqOrwYXSed68xjLd/ZoSnBR8w==}
+  /pnpm@8.8.0:
+    resolution: {integrity: sha512-eY5rMiZpzmPI2oVr1irR97bzb036oKwCWvK91wDQndXcqUPlytPtrF0bO668Syw/uA+7hTf5NnM8Mr4ux4BRRA==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
