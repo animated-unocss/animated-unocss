@@ -50,14 +50,14 @@
     "unocss": ">=0.50.4"
   },
   "dependencies": {
-    "@unocss/autocomplete": "^0.56.4",
-    "@unocss/preset-mini": "0.56.4"
+    "@unocss/autocomplete": "^0.56.5",
+    "@unocss/preset-mini": "0.56.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.43.1",
     "@elonehoo/rimraf": "0.0.1",
     "@types/lodash-es": "^4.17.9",
-    "@types/node": "20.8.0",
+    "@types/node": "20.8.2",
     "@types/postcss-js": "^4.0.2",
     "@vitest/coverage-c8": "^0.33.0",
     "@vitest/ui": "^0.34.6",
@@ -70,8 +70,8 @@
     "postcss-js": "^4.0.1",
     "typescript": "5.2.2",
     "unbuild": "^2.0.0",
-    "unocss": "^0.56.4",
-    "vite": "4.4.9",
+    "unocss": "^0.56.5",
+    "vite": "4.4.10",
     "vitest": "0.34.6"
   }
 }
