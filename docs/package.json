@@ -20,7 +20,7 @@
     "@vitejs/plugin-vue": "^4.3.4",
     "@vueuse/core": "^10.4.1",
     "animate.css": "4.1.1",
-    "esno": "^0.17.0",
+    "esno": "^4.0.0",
     "fast-glob": "^3.3.1",
     "https-localhost": "^4.7.1",
     "jiti": "^1.20.0",
