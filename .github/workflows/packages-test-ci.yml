@@ -3,8 +3,8 @@ name: Packages Test
 on:
   push:
     paths:
-      - "test/**"
-      - "core/**"
+      - 'test/**'
+      - 'core/**'
     branches:
       - main
 

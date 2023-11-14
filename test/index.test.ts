@@ -1,5 +1,5 @@
 import { type CSSObject, createGenerator, presetAttributify, presetUno } from 'unocss'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import postcss from 'postcss'
 import postcssJs from 'postcss-js'
 import { animatedUno } from '../src'
@@ -14,20 +14,20 @@ const durationShortcuts = {
 }
 
 describe('animated.json', () => {
-  test('The keys of the data are in kebabCase format', () => {
+  it('the keys of the data are in kebabCase format', () => {
     Object.keys(animated).forEach((key) => {
       expect(/^[a-z-]+$/.test(key)).is.true
     })
   })
 
-  test('animation names starting with une in camelCase format', () => {
+  it('animation names starting with une in camelCase format', () => {
     Object.values(animated).forEach(({ animationName, css }) => {
       expect(/^une[A-Z]/.test(animationName)).is.true
       expect(/^une[A-Z]/.test(css['animation-name'])).is.true
     })
   })
 
-  test('The style name is kebabCase format', () => {
+  it('the style name is kebabCase format', () => {
     Object.values(animated).forEach(({ css }) => {
       Object.keys(css).forEach((key) => {
         expect(/^[a-z-]+$/.test(key)).is.true
@@ -45,7 +45,7 @@ describe('animated', () => {
     ],
   })
 
-  test('animated-name', async () => {
+  it('animated-name', async () => {
     const { css } = await generator.generate(
       Object.keys(animated).map(k => `animated-${k}`).join(' '),
     )
@@ -60,7 +60,7 @@ describe('animated', () => {
     })
   })
 
-  test('animated-repeat', async () => {
+  it('animated-repeat', async () => {
     const { css } = await generator.generate(`
       animated-infinite
       animated-repeat-infinite
@@ -71,7 +71,7 @@ describe('animated', () => {
     `)
   })
 
-  test('animated-delay', async () => {
+  it('animated-delay', async () => {
     const { css } = await generator.generate(`
       animated-delay-none
       ${/* 0 ~ 66 */ Array.from({ length: 67 }, (_, i) => `animated-delay-${i}`).join(' ')}
@@ -83,7 +83,7 @@ describe('animated', () => {
     `)
   })
 
-  test('animated-duration', async () => {
+  it('animated-duration', async () => {
     const { css } = await generator.generate(`
       animated-duration-none
       ${/* shortcuts */ Object.keys(durationShortcuts).map(k => `animated-${k}`).join(' ')}

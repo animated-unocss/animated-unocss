@@ -12,23 +12,23 @@
   },
   "dependencies": {
     "animated-unocss": "workspace:*",
-    "vue": "^3.3.4"
+    "vue": "^3.3.8"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.21",
-    "@unocss/reset": "^0.56.4",
-    "@vitejs/plugin-vue": "^4.3.4",
-    "@vueuse/core": "^10.4.1",
+    "@unocss/reset": "^0.57.4",
+    "@vitejs/plugin-vue": "^4.4.1",
+    "@vueuse/core": "^10.6.1",
     "animate.css": "4.1.1",
-    "esno": "^0.17.0",
-    "fast-glob": "^3.3.1",
+    "esno": "^4.0.0",
+    "fast-glob": "^3.3.2",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.20.0",
-    "pnpm": "^8.8.0",
+    "jiti": "^1.21.0",
+    "pnpm": "^8.10.5",
     "typescript": "^5.2.2",
-    "unocss": "^0.56.4",
+    "unocss": "^0.57.4",
     "unplugin-vue-components": "^0.25.2",
-    "vitepress": "1.0.0-rc.20",
+    "vitepress": "1.0.0-rc.25",
     "workbox-window": "^7.0.0"
   }
 }

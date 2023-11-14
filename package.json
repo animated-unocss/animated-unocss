@@ -19,8 +19,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     },
     "./*": "./*"
   },
@@ -28,8 +28,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "*.d.ts"
+    "*.d.ts",
+    "dist"
   ],
   "scripts": {
     "build": "rimraf dist && unbuild",
@@ -50,28 +50,28 @@
     "unocss": ">=0.50.4"
   },
   "dependencies": {
-    "@unocss/autocomplete": "^0.56.4",
-    "@unocss/preset-mini": "0.56.4"
+    "@unocss/autocomplete": "^0.57.4",
+    "@unocss/preset-mini": "0.57.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.43.1",
+    "@antfu/eslint-config": "1.1.1",
     "@elonehoo/rimraf": "0.0.1",
-    "@types/lodash-es": "^4.17.9",
-    "@types/node": "20.8.0",
-    "@types/postcss-js": "^4.0.2",
-    "@vitest/coverage-c8": "^0.33.0",
+    "@types/lodash-es": "^4.17.11",
+    "@types/node": "20.9.0",
+    "@types/postcss-js": "^4.0.4",
+    "@vitest/coverage-v8": "^0.34.6",
     "@vitest/ui": "^0.34.6",
     "animate.css": "4.1.1",
     "bumpp": "9.2.0",
-    "eslint": "8.50.0",
+    "eslint": "8.53.0",
     "lodash-es": "^4.17.21",
-    "pnpm": "8.8.0",
+    "pnpm": "8.10.5",
     "postcss": "^8.4.31",
     "postcss-js": "^4.0.1",
     "typescript": "5.2.2",
     "unbuild": "^2.0.0",
-    "unocss": "^0.56.4",
-    "vite": "4.4.9",
+    "unocss": "^0.57.4",
+    "vite": "4.5.0",
     "vitest": "0.34.6"
   }
 }
