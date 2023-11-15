@@ -54,7 +54,7 @@
     "@unocss/preset-mini": "0.57.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "1.1.1",
+    "@antfu/eslint-config": "1.1.2",
     "@elonehoo/rimraf": "0.0.1",
     "@types/lodash-es": "^4.17.11",
     "@types/node": "20.9.0",
