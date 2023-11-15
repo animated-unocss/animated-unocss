@@ -16,8 +16,8 @@ importers:
         version: 0.57.4
     devDependencies:
       '@antfu/eslint-config':
-        specifier: 1.1.1
-        version: 1.1.1(eslint@8.53.0)(typescript@5.2.2)(vitest@0.34.6)
+        specifier: 1.1.2
+        version: 1.1.2(eslint@8.53.0)(typescript@5.2.2)(vitest@0.34.6)
       '@elonehoo/rimraf':
         specifier: 0.0.1
         version: 0.0.1
@@ -310,13 +310,16 @@ packages:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  /@antfu/eslint-config@1.1.1(eslint@8.53.0)(typescript@5.2.2)(vitest@0.34.6):
-    resolution: {integrity: sha512-/0N4JSxmiTQKbHHRxUh+MoYKcmXuBEzTsSYgIN2gzI8Rc9iXCU0Q5VI0YMS2inq6bQYUwqrnzFFwZbs4ZpHtkw==}
+  /@antfu/eslint-config@1.1.2(eslint@8.53.0)(typescript@5.2.2)(vitest@0.34.6):
+    resolution: {integrity: sha512-5wOOd7hgPFvSeeJB5BcQxzuEdfI3L2/nvUxPhdkNGCuUUXKbmH9dC5jAi32psIhYwwzH5WHHi/rRumfyrGmh/w==}
     hasBin: true
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
       '@antfu/eslint-define-config': 1.23.0-2
+      '@eslint-types/jsdoc': 46.8.2-1
+      '@eslint-types/typescript-eslint': 6.9.1
+      '@eslint-types/unicorn': 49.0.0
       '@stylistic/eslint-plugin': 1.2.0(eslint@8.53.0)(typescript@5.2.2)
       '@typescript-eslint/eslint-plugin': 6.11.0(@typescript-eslint/parser@6.11.0)(eslint@8.53.0)(typescript@5.2.2)
       '@typescript-eslint/parser': 6.11.0(eslint@8.53.0)(typescript@5.2.2)
@@ -1014,6 +1017,18 @@ packages:
   /@eslint-community/regexpp@4.10.0:
     resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+    dev: true
+
+  /@eslint-types/jsdoc@46.8.2-1:
+    resolution: {integrity: sha512-FwD7V0xX0jyaqj8Ul5ZY+TAAPohDfVqtbuXJNHb+OIv1aTIqZi5+Zn3F2UwQ5O3BnQd2mTduyK0+HjGx3/AMFg==}
+    dev: true
+
+  /@eslint-types/typescript-eslint@6.9.1:
+    resolution: {integrity: sha512-mH3DMfVVg1d1oCoyI61J2FM5O7ta6J8PtAobSYrayUZ+7ukXwL2RNVF2sDaoqVrFTDmYBA6ol7VQrk1YgaO96w==}
+    dev: true
+
+  /@eslint-types/unicorn@49.0.0:
+    resolution: {integrity: sha512-NfXSZIsPFRD2fwTDZQj8SaXqS/rXjB5foxMraLovyrYGXiQK2y0780drDKYYSVbqvco29QIYoZNmnKTUkzZMvQ==}
     dev: true
 
   /@eslint/eslintrc@2.1.3:
