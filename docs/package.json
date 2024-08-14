@@ -24,7 +24,7 @@
     "fast-glob": "^3.3.2",
     "https-localhost": "^4.7.1",
     "jiti": "^1.21.0",
-    "pnpm": "^8.10.5",
+    "pnpm": "^9.7.1",
     "typescript": "^5.2.2",
     "unocss": "^0.57.4",
     "unplugin-vue-components": "^0.25.2",

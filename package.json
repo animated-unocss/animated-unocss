@@ -65,7 +65,7 @@
     "bumpp": "9.2.0",
     "eslint": "8.53.0",
     "lodash-es": "^4.17.21",
-    "pnpm": "8.10.5",
+    "pnpm": "9.7.1",
     "postcss": "^8.4.31",
     "postcss-js": "^4.0.1",
     "typescript": "5.2.2",
