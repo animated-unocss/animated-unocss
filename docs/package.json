@@ -1,5 +1,6 @@
 {
   "name": "@animated-unocss/docs",
+  "type": "module",
   "version": "0.0.4",
   "private": "true",
   "description": "A configuration to use Animate.css with UnoCSS.",
@@ -12,23 +13,23 @@
   },
   "dependencies": {
     "animated-unocss": "workspace:*",
-    "vue": "^3.3.8"
+    "vue": "^3.4.38"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.1.21",
-    "@unocss/reset": "^0.57.4",
-    "@vitejs/plugin-vue": "^4.4.1",
-    "@vueuse/core": "^10.6.1",
+    "@iconify-json/carbon": "^1.1.37",
+    "@unocss/reset": "^0.62.2",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vueuse/core": "^11.0.0",
     "animate.css": "4.1.1",
-    "esno": "^4.0.0",
+    "esno": "^4.7.0",
     "fast-glob": "^3.3.2",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.21.0",
-    "pnpm": "^8.10.5",
-    "typescript": "^5.2.2",
-    "unocss": "^0.57.4",
-    "unplugin-vue-components": "^0.25.2",
-    "vitepress": "1.0.0-rc.25",
-    "workbox-window": "^7.0.0"
+    "jiti": "^1.21.6",
+    "pnpm": "^9.7.1",
+    "typescript": "^5.5.4",
+    "unocss": "^0.62.2",
+    "unplugin-vue-components": "^0.27.4",
+    "vitepress": "1.3.3",
+    "workbox-window": "^7.1.0"
   }
 }
