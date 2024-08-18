@@ -25,7 +25,7 @@ jobs:
       - name: pnpm Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build
-        run: pnpm run core
+        run: pnpm run build
       - name: Coveralls
         run: pnpm run coverage
 
@@ -45,6 +45,6 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile
       - name: Build
-        run: pnpm run core
+        run: pnpm run build
       - name: Test
         run: pnpm run test
