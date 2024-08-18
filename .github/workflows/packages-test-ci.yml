@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: latest
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.4.0
+        uses: pnpm/action-setup@v2.4.1
         with:
           version: latest
       - name: pnpm Install dependencies
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: latest
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.4.0
+        uses: pnpm/action-setup@v2.4.1
         with:
           version: latest
       - name: Install
