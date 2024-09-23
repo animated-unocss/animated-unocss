@@ -50,11 +50,11 @@
     "unocss": ">=0.50.4"
   },
   "dependencies": {
-    "@unocss/autocomplete": "^0.62.3",
-    "@unocss/preset-mini": "0.62.3"
+    "@unocss/autocomplete": "^0.62.4",
+    "@unocss/preset-mini": "0.62.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.6.2",
+    "@antfu/eslint-config": "3.7.1",
     "@elonehoo/rimraf": "0.0.1",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "22.5.5",
@@ -63,15 +63,15 @@
     "@vitest/ui": "^2.1.1",
     "animate.css": "4.1.1",
     "bumpp": "9.5.2",
-    "eslint": "9.10.0",
+    "eslint": "9.11.0",
     "lodash-es": "^4.17.21",
-    "pnpm": "9.10.0",
+    "pnpm": "9.11.0",
     "postcss": "^8.4.47",
     "postcss-js": "^4.0.1",
     "typescript": "5.6.2",
     "unbuild": "^2.0.0",
-    "unocss": "^0.62.3",
-    "vite": "5.4.5",
+    "unocss": "^0.62.4",
+    "vite": "5.4.7",
     "vitest": "2.1.1"
   }
 }
