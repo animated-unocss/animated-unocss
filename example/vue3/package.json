@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "animated-unocss": "workspace:*",
-    "unocss": "^0.62.4",
-    "vue": "^3.5.8"
+    "unocss": "^0.63.1",
+    "vue": "^3.5.10"
   },
   "devDependencies": {
-    "@unocss/preset-attributify": "^0.62.4",
-    "@unocss/reset": "^0.62.4",
+    "@unocss/preset-attributify": "^0.63.1",
+    "@unocss/reset": "^0.63.1",
     "@vitejs/plugin-vue": "^5.1.4",
     "animate.css": "4.1.1",
     "typescript": "^5.6.2",
-    "vite": "^5.4.7",
+    "vite": "^5.4.8",
     "vue-tsc": "^2.1.6"
   }
 }
