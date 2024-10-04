@@ -24,7 +24,7 @@
     "esno": "^4.8.0",
     "fast-glob": "^3.3.2",
     "https-localhost": "^4.7.1",
-    "jiti": "^1.21.6",
+    "jiti": "^2.2.1",
     "pnpm": "^9.11.0",
     "typescript": "^5.6.2",
     "unocss": "^0.63.1",
