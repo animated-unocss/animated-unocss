@@ -50,28 +50,28 @@
     "unocss": ">=0.50.4"
   },
   "dependencies": {
-    "@unocss/autocomplete": "^0.64.0",
-    "@unocss/preset-mini": "0.64.0"
+    "@unocss/autocomplete": "^0.64.1",
+    "@unocss/preset-mini": "0.64.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.8.0",
+    "@antfu/eslint-config": "3.9.1",
     "@elonehoo/rimraf": "0.0.1",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "22.9.0",
     "@types/postcss-js": "^4.0.4",
-    "@vitest/coverage-v8": "^2.1.4",
-    "@vitest/ui": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.5",
+    "@vitest/ui": "^2.1.5",
     "animate.css": "4.1.1",
     "bumpp": "9.8.1",
-    "eslint": "9.14.0",
+    "eslint": "9.15.0",
     "lodash-es": "^4.17.21",
-    "pnpm": "9.12.3",
-    "postcss": "^8.4.48",
+    "pnpm": "9.13.2",
+    "postcss": "^8.4.49",
     "postcss-js": "^4.0.1",
     "typescript": "5.6.3",
     "unbuild": "^2.0.0",
-    "unocss": "^0.64.0",
-    "vite": "5.4.10",
-    "vitest": "2.1.4"
+    "unocss": "^0.64.1",
+    "vite": "5.4.11",
+    "vitest": "2.1.5"
   }
 }
