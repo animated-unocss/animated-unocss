@@ -28,7 +28,7 @@
     "pnpm": "^9.15.2",
     "typescript": "^5.7.2",
     "unocss": "^0.65.3",
-    "unplugin-vue-components": "^0.28.0",
+    "unplugin-vue-components": "^29.1.0",
     "vitepress": "1.5.0",
     "workbox-window": "^7.3.0"
   }
