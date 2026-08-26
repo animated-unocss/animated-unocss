@@ -18,7 +18,7 @@
   "devDependencies": {
     "@iconify-json/carbon": "^1.2.5",
     "@unocss/reset": "^0.65.3",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue": "^6.0.8",
     "@vueuse/core": "^12.3.0",
     "animate.css": "4.1.1",
     "esno": "^4.8.0",
