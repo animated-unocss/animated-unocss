@@ -50,28 +50,28 @@
     "unocss": ">=0.50.4"
   },
   "dependencies": {
-    "@unocss/autocomplete": "^0.65.3",
-    "@unocss/preset-mini": "0.65.3"
+    "@unocss/autocomplete": "^0.65.4",
+    "@unocss/preset-mini": "0.65.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.12.1",
+    "@antfu/eslint-config": "3.16.0",
     "@elonehoo/rimraf": "0.0.1",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "22.10.5",
-    "@types/postcss-js": "^4.0.4",
-    "@vitest/coverage-v8": "^2.1.8",
-    "@vitest/ui": "^2.1.8",
+    "@types/node": "22.20.1",
+    "@types/postcss-js": "^4.1.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "@vitest/ui": "^2.1.9",
     "animate.css": "4.1.1",
-    "bumpp": "9.9.2",
-    "eslint": "9.17.0",
-    "lodash-es": "^4.17.21",
-    "pnpm": "9.15.2",
-    "postcss": "^8.4.49",
-    "postcss-js": "^4.0.1",
-    "typescript": "5.7.2",
-    "unbuild": "^3.2.0",
-    "unocss": "^0.65.3",
-    "vite": "6.0.7",
-    "vitest": "2.1.8"
+    "bumpp": "9.11.1",
+    "eslint": "9.39.5",
+    "lodash-es": "^4.18.1",
+    "pnpm": "9.15.9",
+    "postcss": "^8.5.28",
+    "postcss-js": "^4.1.0",
+    "typescript": "5.9.3",
+    "unbuild": "^3.6.1",
+    "unocss": "^0.65.4",
+    "vite": "6.4.3",
+    "vitest": "2.1.9"
   }
 }
