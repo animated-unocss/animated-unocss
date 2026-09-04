@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.2.5",
-    "@unocss/reset": "^0.65.3",
+    "@unocss/reset": "^66.10.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vueuse/core": "^12.3.0",
     "animate.css": "4.1.1",
@@ -27,7 +27,7 @@
     "jiti": "^2.4.2",
     "pnpm": "^9.15.2",
     "typescript": "^5.7.2",
-    "unocss": "^0.65.3",
+    "unocss": "^66.10.0",
     "unplugin-vue-components": "^0.28.0",
     "vitepress": "1.5.0",
     "workbox-window": "^7.3.0"
