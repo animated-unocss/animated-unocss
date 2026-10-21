@@ -62,7 +62,7 @@
     "@vitest/coverage-v8": "^5.0.5",
     "@vitest/ui": "^5.0.5",
     "animate.css": "4.1.1",
-    "bumpp": "9.11.1",
+    "bumpp": "12.3.0",
     "eslint": "10.13.0",
     "lodash-es": "^4.18.1",
     "pnpm": "9.15.9",
