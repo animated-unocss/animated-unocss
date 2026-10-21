@@ -36,15 +36,15 @@ describe('animated.json', () => {
   })
 })
 
-describe('animated', () => {
-  const generator = createGenerator({
-    presets: [
-      presetUno(),
-      presetAttributify(),
-      animatedUno(),
-    ],
-  })
+const generator = await createGenerator({
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    animatedUno(),
+  ],
+})
 
+describe('animated', () => {
   it('animated-name', async () => {
     const { css } = await generator.generate(
       Object.keys(animated).map(k => `animated-${k}`).join(' '),

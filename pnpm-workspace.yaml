@@ -1,3 +1,13 @@
 packages:
   - 'example/*'
   - docs
+
+# CI installs pnpm via `version: latest`. pnpm 11+ refuses a frozen lockfile
+# when any entry was published within the last day, which fails Renovate
+# upgrades on the day they open. 0 restores immediate installs.
+minimumReleaseAge: 0
+
+# pnpm 10+ fails install unless dependency build scripts are pre-approved
+# (ERR_PNPM_IGNORED_BUILDS). Run them, as pnpm 9 did, so new transitive
+# packages do not need a follow-up allowlist change.
+dangerouslyAllowAllBuilds: true
