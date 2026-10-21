@@ -16,7 +16,7 @@
   "devDependencies": {
     "@unocss/preset-attributify": "^66.11.0",
     "@unocss/reset": "^66.11.0",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.10",
     "animate.css": "4.1.1",
     "typescript": "^5.9.3",
     "vite": "^6.4.4",
