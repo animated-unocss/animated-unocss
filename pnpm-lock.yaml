@@ -55,8 +55,8 @@ importers:
         specifier: ^8.5.33
         version: 8.5.33
       postcss-js:
-        specifier: ^4.1.0
-        version: 4.1.0(postcss@8.5.33)
+        specifier: ^5.1.0
+        version: 5.1.0(postcss@8.5.33)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -2037,10 +2037,6 @@ packages:
     resolution: {integrity: sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==}
     engines: {node: '>= 0.4'}
 
-  camelcase-css@2.0.1:
-    resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
-    engines: {node: '>= 6'}
-
   caniuse-api@3.0.0:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
 
@@ -3536,9 +3532,9 @@ packages:
     peerDependencies:
       postcss: ^8.5.13
 
-  postcss-js@4.1.0:
-    resolution: {integrity: sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw==}
-    engines: {node: ^12 || ^14 || >= 16}
+  postcss-js@5.1.0:
+    resolution: {integrity: sha512-glrtXSrLt3eH/mgceNgP6u/6jHodqRQ/ToFht+yqwquw0KBf6Zue5qJQFgcIEfQQyYl+BCPN/TYdWyeOQh3c5Q==}
+    engines: {node: ^20 || ^22 || >= 24}
     peerDependencies:
       postcss: ^8.4.21
 
@@ -6054,8 +6050,6 @@ snapshots:
       get-intrinsic: 1.2.4
       set-function-length: 1.2.2
 
-  camelcase-css@2.0.1: {}
-
   caniuse-api@3.0.0:
     dependencies:
       browserslist: 4.29.4
@@ -7886,9 +7880,8 @@ snapshots:
     dependencies:
       postcss: 8.5.33
 
-  postcss-js@4.1.0(postcss@8.5.33):
+  postcss-js@5.1.0(postcss@8.5.33):
     dependencies:
-      camelcase-css: 2.0.1
       postcss: 8.5.33
 
   postcss-merge-longhand@7.0.7(postcss@8.5.33):
