@@ -18,7 +18,7 @@
     "@unocss/reset": "^66.13.0",
     "@vitejs/plugin-vue": "^6.0.11",
     "animate.css": "4.1.1",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "vite": "^6.4.6",
     "vue-tsc": "^2.2.12"
   }
